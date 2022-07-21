@@ -24,7 +24,7 @@ const changeInterval = () => {
 setInterval(() => {
     index++
     changeInterval()
-}, 5000)
+}, 10000)
 
 next.addEventListener("click", () => {
     index++
