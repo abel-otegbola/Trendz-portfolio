@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.css"/>  
-    <link rel="stylesheet" href="./assets/vendors/owlcarousel/css/owl.carousel.min.css"/>  
-    <link rel="stylesheet" href="./assets/vendors/owlcarousel/css/owl.theme.default.min.css"/>  
     <link rel="stylesheet" href="./assets/vendors/aos/aos.css" />
     <link href="./assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -20,41 +18,41 @@
 
     <title>Trendz</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar-nav">
     <div>
         <!-----------------Heading section----------------->
 
         <!--Navbar section-->
         <nav class="navbar navbar-expand-sm sticky-top" id="nav">
           <!-- Brand and logo section -->
-            <h2 class="navbar-brand mt-2"><img src="./assets/imgs/logo.jpg" class="logo"/></h2>
+            <h2 class="navbar-brand col-lg-2"><img src="./assets/imgs/logo.jpg" class="logo rounded-circle" width="30px" height="30px"/></h2>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span><i class="fa-solid fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-items-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
-                    <div class="menu-links">
-                      <li class="nav-item p-2">
+                    <div class="menu-links text-center">
+                      <li class="nav-item p-2 me-2">
                           <a class="nav-link active" href="#home">Home</a>
                       </li>
-                      <li class="nav-item p-2">
+                      <li class="nav-item p-2 me-2">
                           <a class="nav-link" href="#about">About</a>
                       </li>
-                      <li class="nav-item p-2">
+                      <li class="nav-item p-2 me-2">
                           <a class="nav-link" href="#skills">Skills</a>
                       </li>
-                      <li class="nav-item p-2">
+                      <li class="nav-item p-2 me-2">
                           <a class="nav-link" href="#projects">Projects</a>
                       </li>
-                      <li class="nav-item p-2">
+                      <li class="nav-item p-2 me-2">
                           <a class="nav-link" href="#contacts">Contacts</a>
                       </li>
                     </div>
-                    <li class="nav-item p-1 socials">
-                        <a><i class="fa-brands fa-dribbble"></i></a>
-                        <a><i class="fa-brands fa-twitter"></i></a>
-                        <a><i class="fa-brands fa-instagram"></i></a>
+                    <li class="nav-item pt-2 socials">
+                        <a><i class="fa-brands fa-dribbble rounded-circle p-2 ms-4 me-2 bg-light"></i></a>
+                        <a><i class="fa-brands fa-twitter rounded-circle p-2 ms-4 me-2 bg-light"></i></a>
+                        <a><i class="fa-brands fa-instagram rounded-circle p-2 ms-4 me-2 bg-light"></i></a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +61,7 @@
 
         
         <!--Header texts hero section-->
-        <header id="home" class="">
+        <header id="home" class="shadow bg-white">
           <div class="slide justify-content-between active">
             <div class="box hero col-lg-4 col-md-6">
               <h1 class="back">DISCOVERY</h1>
@@ -113,10 +111,12 @@
         <!--Clients section-->
         <section id="clients" class="clients section-bg">
             <div class="container">
+
               <div class="heading">
-                <p data-aos="fade-up">Trusted Clients</p>
-                <h4 class="pb-3" data-aos="fade-up">Trusted By Amazing Company Brands</h4>
+                <h4 data-aos="fade-up">Trusted Clients</h4>
+                <p class="pb-3" data-aos="fade-up">Trusted By Amazing Company Brands</p>
               </div>
+              
               <div class="row" data-aos="zoom-in">
       
                 <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
@@ -151,24 +151,24 @@
         <!--About us section-->
         <section id="about" class="about pt-3">
             <div class="heading" data-aos="fade-up">
-                <p>About me</p>
-                <h4 class="pb-3">Offering values, integrity and excellence</h4>
+                <h4>About me</h4>
+                <p class="pb-3">Offering values, integrity and excellence</p>
             </div>
 
             <div class="row about-list">
                 <div class="col-lg-12 d-flex flex-wrap justify-content-between text-center">
                     <div class="list col-lg-4 col-md-6 pb-5" data-aos="fade-up">
-                        <i class="fa-solid fa-users-viewfinder"></i>
+                        <i class=" border border-2 rounded fa-solid fa-users-viewfinder"></i>
                         <h4>Who I am</h4>
                         <p>A product designer, Web developer and visual designer. </p>
                     </div>
                     <div class="list col-lg-4 col-md-6 pb-5" data-aos="fade-up">
-                        <i class="fa-solid fa-car"></i>
+                        <i class=" border border-2 rounded fa-solid fa-car"></i>
                         <h4>What I do</h4>
                         <p>Create professional, high class, functional website and visual projects</p>
                     </div>
                     <div class="list col-lg-4 col-md-6 pb-5" data-aos="fade-up">
-                        <i class="fa-solid fa-timeline"></i>
+                        <i class=" border border-2 rounded fa-solid fa-timeline"></i>
                         <h4>How does it work</h4>
                         <p>Send me a message through the contact me or on any of my social medias.</p>
                     </div>
@@ -181,17 +181,17 @@
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills">
       <div class="heading">
-        <p data-aos="fade-up">My Awesome Skills</p>
-        <h4 class="pb-3" data-aos="fade-up">My experience and technology skills</h4>
+        <h4 data-aos="fade-up">My Awesome Skills</h4>
+        <p class="pb-3" data-aos="fade-up">My experience and technology skills</p>
       </div>
 
-      <div class="container" data-aos="fade-up">
+      <div class="" data-aos="fade-up">
 
         <div class="row d-flex align-items-center">
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/imgs/skills.jpg" class="img-fluid m-auto" alt="" width="70%">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content p-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-up" data-aos-delay="100">
             <h4>With over 5 years Expertise in these skills</h4>
             <p class="fst-italic">
               You can always trust me to deliver the best services using these skills.
@@ -228,8 +228,8 @@
     <!-- ======= Projects Section ======= -->
         <section id="projects">
           <div class="heading">
-            <p data-aos="fade-up">Recent Projects</p>
-            <h4 class="pb-3" data-aos="fade-up">Amazing, Unique projects made with love</h4>
+            <h4 data-aos="fade-up">Recent Projects</h4>
+            <p class="pb-3" data-aos="fade-up">Amazing, Unique projects made with love</p>
           </div>
 
           <div class="gallery">
@@ -281,8 +281,8 @@
     <!-- ======= Contacts Section ======= -->
     <section id="contacts" class="container contact">
       <div class="heading" data-aos="fade-up">
-        <p>Contact me</p>
-          <h4 class="pb-3">Get In Touch</h4>
+        <h4>Contact me</h4>
+          <p class="pb-3">Get In Touch</p>
           <p class="p-3">Feel free to message me through the form or my social handles and I will respond within 24 hours.</p>
       </div>
 
@@ -353,8 +353,8 @@
         <div class="container" data-aos="fade-up">
   
           <div class="heading" data-aos="fade-up">
-            <p>Questions</p>
-            <h4 class="pb-3">Frequently Asked Questions</h4>
+            <h4>Questions</h4>
+            <p class="pb-3">Frequently Asked Questions</p>
             <p class="p-3">Some amazing questions asked by my awesome clients to help you better understand my services.</p>
           </div>
   
@@ -468,61 +468,12 @@
 
 
     <div id="preloader">
-      
       <div class="circle"></div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
-    <script>
-    function sendContact() {
-      var valid;	
-      valid = validateContact();
-      if(valid) {
-        jQuery.ajax({
-        url: "contactmail.php",
-        data:'userName='+$("#userName").val()+'&userEmail='+$("#userEmail").val()+'&subject='+$("#subject").val()+'&content='+$(content).val(),
-        type: "POST",
-        success:function(data){
-        $("#mail-status").html(data);
-        },
-        error:function (){}
-        });
-      }
-    }
-    
-    function validateContact() {
-      var valid = true;	
-      $(".demoInputBox").css('background-color','');
-      
-      if(!$("#userName").val()) {
-        $("#userName").css('background-color','#FFFFDF');
-        valid = false;
-      }
-      if(!$("#userEmail").val()) {
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-      }
-      if(!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
-        $("#userEmail").css('background-color','#FFFFDF');
-        valid = false;
-      }
-      if(!$("#subject").val()) {
-        $("#subject").css('background-color','#FFFFDF');
-        valid = false;
-      }
-      if(!$("#content").val()) {
-        $("#content").css('background-color','#FFFFDF');
-        valid = false;
-      }
-      
-      return valid;
-    }
-  
       </script>
 
     <script src="./assets/vendors/bootstrap/js/bootstrap.js"></script>  
-    <script src="./assets/vendors/owlcarousel/js/jquery.min.js"></script>  
-    <script src="./assets/vendors/owlcarousel/js/owl.carousel.min.js"></script>  
     <script src="./assets/vendors/aos/aos.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/slider.js"></script>

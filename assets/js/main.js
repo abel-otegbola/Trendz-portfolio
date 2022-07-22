@@ -20,55 +20,6 @@ if (preloader) {
     });
 }
 
-/**
- * Owl slider
- */
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-        items: 4,
-        responsiveClass: true,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            500: {
-                items: 2,
-                nav: false
-            },
-            800: {
-                items: 3,
-                nav: true
-            },
-            1000: {
-                items: 4,
-                nav: true
-            }
-        }
-    });
-  });
-
-/**
- * Preloader
- */
- let navbarlinks = document.querySelectorAll('.navbar-nav .nav-item .nav-link');
- let sections = document.querySelectorAll('header, #about, #skills, #projects, #contacts');
- if (navbarlinks) {
-     window.addEventListener('scroll', () => {
-        let position = window.scrollY
-        for(let i=0; i<sections.length; i++){
-            navbarlinks[i].classList.remove("active")
-            if(position >= sections[i].offsetTop-200  && position <= (sections[i].offsetTop + sections[i].offsetHeight-200)) {
-                navbarlinks[i].classList.add("active")
-            }
-            else {
-                navbarlinks[i].classList.remove("active")
-            }
-        }
-     });
- }
-
  /**
  * navbar background
  */
