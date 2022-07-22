@@ -190,7 +190,6 @@ nav .nav-item.socials i:hover {
     nav .nav-item.socials {
         display: block;
     }
-
 }
 
 
@@ -526,6 +525,9 @@ progress {
 /*--------------------------------------------------------------
 # Contacts section
 --------------------------------------------------------------*/
+.contact {
+    padding: 5% 8.5%;
+}
 .contacts-left {
     background-color: var(--primaryColor);
     color: #fff;
