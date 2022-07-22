@@ -92,11 +92,11 @@ input[type=radio] {
 # Sections General Heading
 --------------------------------------------------------------*/
 section {
-    padding: 5% 0;
+    padding: 10% 0;
 }
 .heading {
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 .heading h4 {
     color: #000;
@@ -109,7 +109,7 @@ section {
 .heading p {
     position: relative;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: var(--primaryColor);
     text-transform: capitalize;
     margin: auto;
@@ -129,7 +129,7 @@ section .heading-texts span {
 }
 
 nav {
-    padding: 0 8.5%;
+    padding: 0 6.5%;
     color: #000;
     background-color: #fff;
 }
@@ -192,8 +192,8 @@ nav .nav-item.socials i:hover {
 --------------------------------------------------------------*/
 
 header {
-    margin: 3% 8.5%;
-    height: 80vh;
+    margin: 3% 6.5%;
+    max-height: 80vh;
     box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.201);
     position: relative;
     overflow: hidden;
@@ -207,7 +207,7 @@ header#home .slide.active {
 }
 header .hero {
     padding: 4%;
-    margin: 0 5%;
+    margin: 0 50px;
     position: relative;
 }
 header .hero .back {
@@ -355,7 +355,7 @@ header .slide:nth-child(5) .hero .hero-input button {
 }
 @media (max-width: 768px) {
     header .hero {
-        left: 5%;
+        left: 50px;
         bottom: 20%;
   }
     header .hero h1 {
@@ -385,7 +385,7 @@ header .slide:nth-child(5) .hero .hero-input button {
 # About section
 --------------------------------------------------------------*/
 .about {
-    margin: 5% 8.5% 0 8.5%;
+    margin: 15% 6.5% 0 6.5%;
 }
 .about-list i {
     font-size: 20px;
@@ -414,8 +414,8 @@ header .slide:nth-child(5) .hero .hero-input button {
 # Skills
 --------------------------------------------------------------*/
 .skills {
-    padding: 10% 8.5%;
-    padding-bottom: 5%;
+    padding: 15% 6.5%;
+    padding-bottom: 50px;
 }
 .skills .content h4 {
     font-weight: 700;
@@ -441,7 +441,7 @@ progress {
 # Projects section
 --------------------------------------------------------------*/
 .projects {
-    padding: 10% 8.5% ;
+    padding: 15% 6.5% ;
 }
 .gallery {
     padding: 0;
@@ -481,12 +481,12 @@ progress {
 # Contacts section
 --------------------------------------------------------------*/
 .contact {
-    padding: 5% 8.5%;
+    padding: 10% 6.5%;
 }
 .contacts-left {
     background-color: var(--primaryColor);
     color: #fff;
-    padding: 3% 5%;
+    padding: 3% 50px;
 }
 .contacts-left .info {
     display: flex;
@@ -496,9 +496,6 @@ progress {
 }
 .contacts-left .info i {
     margin-right: 20px;
-}
-.contacts-left .info p {
-    margin-left: 5px;
 }
 .infos i {
     color: var(--primaryColor);
@@ -536,7 +533,7 @@ progress {
     text-decoration: none;
     text-align: center;
     width: 97%;
-    margin: 5% 10px;
+    margin: 50px 10px;
     padding: 10px;
     border-radius: 3px;
     border: none;
@@ -554,6 +551,7 @@ progress {
 --------------------------------------------------------------*/
 .faq {
     background-color: #f3f3f3;
+    padding: 50px 6.5%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -649,7 +647,7 @@ progress {
   
   
 #footer .footer-top {
-    padding: 60px 0 30px 0;
+    padding: 50px 6.5%;
     background: #fff;
 }
   
@@ -747,6 +745,7 @@ progress {
 }
   
 #footer .footer-bottom {
+    padding: 0 6.5%;
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
@@ -772,12 +771,9 @@ progress {
 }
   
   @media (max-width: 768px) {
-  #footer .footer-top {
-    padding-left: 10px;
-  }
   #footer .footer-bottom {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 30px;
+      padding-bottom: 30px;
   }
   #footer .copyright, #footer .credits {
       text-align: center;
