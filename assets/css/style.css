@@ -178,6 +178,7 @@ nav .nav-item.socials i:hover {
         text-align: left;
     }
     nav .nav-item {
+        text-align: left;
         display: block;
         margin: 10px 0;
     }
