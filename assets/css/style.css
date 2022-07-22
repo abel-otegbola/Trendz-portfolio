@@ -180,8 +180,6 @@ nav .nav-item.socials i:hover {
     }
 }
 @media (max-width: 570px) {
-    nav {
-    }
     nav .menu-links {
         text-align: left;
     }
