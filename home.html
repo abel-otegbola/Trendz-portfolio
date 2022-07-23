@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.css"/>  
     <link rel="stylesheet" href="./assets/vendors/aos/aos.css" />
+    <link rel="stylesheet" href="./assets/vendors/glightbox/css/glightbox.min.css" />
     <link href="./assets/vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -150,7 +151,7 @@
           <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
             <img src="assets/imgs/skills.jpg" class="img-fluid m-auto" alt="" width="70%">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="100">
             <p class="p-3">
               You can always trust me to deliver the best services using these skills.
             </p>
@@ -196,58 +197,65 @@
 
 
     
-    <!-- ======= Projects Section ======= -->
-        <section id="projects" class="projects">
-          <div class="heading">
-            <h4 data-aos="fade-up">Recent Projects</h4>
-            <p class="pb-3" data-aos="fade-up">Amazing, Unique projects made with love</p>
-          </div>
+ <!-- ======= Projects Section ======= -->
+ <section id="projects" class="projects">
+  <div class="heading">
+    <h4 data-aos="fade-up">Recent Projects</h4>
+    <p class="pb-3" data-aos="fade-up">Amazing, Unique projects made with love</p>
+  </div>
 
-          <div class="gallery">
-            <div class="project">
-              <img src="./assets/imgs/projects/brand1.jpg" />
-              <div class="texts">
-                  <h4>Personal Website</h4>
-              </div>
-            </div>
-            
-            <div class="project">
-              <img src="./assets/imgs/projects/brand2.jpg" />
-              <div class="texts">
-                  <h4>Porfolio Website</h4>
-              </div>
-            </div>
-            
-            <div class="project">
-              <img src="./assets/imgs/projects/brand3.jpg" />
-              <div class="texts">
-                  <h4>Ecommerce Website</h4>
-              </div>
-            </div>
-            
-            <div class="project">
-              <img src="./assets/imgs/projects/brand4.jpg" />
-              <div class="texts">
-                  <h4>Landing Website</h4>
-              </div>
-            </div>
-            
-            <div class="project">
-              <img src="./assets/imgs/projects/project-7.jpg" />
-              <div class="texts">
-                  <h4>Clean Website</h4>
-              </div>
-            </div>
-            
-            <div class="project">
-              <img src="./assets/imgs/projects/project-8.jpg" />
-              <div class="texts">
-                  <h4>Best Website</h4>
-              </div>
-            </div>
-          </div>
-        </section><!-- End of projects section -->
+  <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+    <li data-filter="*" class="active">All</li>
+    <li data-filter="app">App</li>
+    <li data-filter="card">Card</li>
+    <li data-filter="web">Web</li>
+  </ul>
 
+  <div class="gallery" data-aos="fade-up">
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="app" href="./assets/imgs/projects/brand1.jpg">
+      <img src="./assets/imgs/projects/brand1.jpg" />  
+      <div class="texts d-flex justify-content-center align-items-center">
+        <p>Personal Portfolio</p>
+      </div>
+    </a>
+    
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="web" href="./assets/imgs/projects/brand2.jpg">
+      <img src="./assets/imgs/projects/brand2.jpg" />  
+      <div class="texts d-flex justify-content-center align-items-center">
+        Professional Portfolio
+      </div>
+    </a>
+    
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="card" href="./assets/imgs/projects/brand3.jpg">
+      <img src="./assets/imgs/projects/brand3.jpg" />
+      <div class="texts d-flex justify-content-center align-items-center">
+        Creative Portfolio
+      </div>
+    </a>
+    
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="web" href="./assets/imgs/projects/brand4.jpg">
+      <img src="./assets/imgs/projects/brand4.jpg" />  
+      <div class="texts d-flex justify-content-center align-items-center">
+        Modern Portfolio
+      </div>
+    </a>
+    
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="app" href="./assets/imgs/projects/project-7.jpg">
+      <img src="./assets/imgs/projects/project-7.jpg" />  
+      <div class="texts d-flex justify-content-center align-items-center">
+        Agency website
+      </div>
+    </a>
+    
+    <a class="portfolio-lightbox project" data-aos="zoom-in" data-filter="card" href="./assets/imgs/projects/project-8.jpg">
+      <img src="./assets/imgs/projects/project-8.jpg" />  
+      <div class="texts d-flex justify-content-center align-items-center">
+        Clean website
+      </div>
+    </a>
+  </div>
+</section><!-- End of projects section -->
+   
 
     <!-- ======= Contacts Section ======= -->
     <section id="contacts" class="contact">
@@ -261,24 +269,24 @@
           <div class="col-lg-4 col-sm-12 col-12 m-auto contacts-left" data-aos="fade-up">
             <p>I'd love to hear from you. I'm always here to chat.</p>
             
-            <div class="info p-3">
-              <i class="fa-solid fa-envelope"></i> 
+            <div class="info p-3 d-flex align-items-start">
+              <i class="p-2 rounded-circle bg-white shadow-sm fa-solid fa-envelope"></i> 
               <div class="texts">
                 <h5>Chat with me</h5>
                 <p>ABdesign@trendz.com</p>
               </div>
             </div>
 
-            <div class="info p-3">
-              <i class="fa-solid fa-location-dot"></i> 
+            <div class="info p-3 d-flex align-items-start">
+              <i class="p-2 rounded-circle bg-white shadow-sm fa-solid fa-location-dot"></i> 
               <div class="texts">
                 <h5>My Office</h5>
                 <p>New York, NY 535022</p>
               </div>
             </div>
 
-            <div class="info p-3">
-              <i class="fa-solid fa-phone"></i> 
+            <div class="info p-3 d-flex align-items-start">
+              <i class="p-2 rounded-circle bg-white shadow-sm fa-solid fa-phone"></i> 
               <div class="texts">
                 <h5>Phone</h5>
                 <p>(+234) 706 0989 331</p>
@@ -437,13 +445,15 @@
 
 
     <div id="preloader">
-      <div class="circle"></div>
+      <div class="preloader"></div>
+      <p>Trendz</p>
     </div>
 
       </script>
 
     <script src="./assets/vendors/bootstrap/js/bootstrap.js"></script>  
     <script src="./assets/vendors/aos/aos.js"></script>
+    <script src="./assets/vendors/glightbox/js/glightbox.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script src="./assets/js/slider.js"></script>
 </body>
