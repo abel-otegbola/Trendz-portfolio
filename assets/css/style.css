@@ -52,7 +52,7 @@ section {
     margin-bottom: 2%;
 }
 .heading h4 {
-    color: #000;
+    color: var(--primaryColor);
     font-weight: 300px;
     font-size: 14px;
     text-transform: uppercase;
@@ -60,13 +60,24 @@ section {
     margin-bottom: 10px;
     padding: 0% 8.5%;
 } 
-.heading p {
+.heading h2 {
     position: relative;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 25px;
-    color: var(--primaryColor);
+    color: #000;
     text-transform: capitalize;
     margin: auto;
+}
+.heading .btn {
+    font-size: 14px;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    margin-top: 40px;
+}
+.heading a {
+    background-color: var(--primaryColor);
+    color: #fff;
+    padding: 7px 10px;
 }
 section .heading-texts h2 {
     font-weight: 700;
@@ -337,19 +348,32 @@ header .slide:nth-child(5) .hero .hero-input button {
 # About section
 --------------------------------------------------------------*/
 .about {
-    margin: 70px 6.5% 0 6.5%;
+    padding: 80px 6.5% 80px 6.5%;
+    background-color: rgb(246, 246, 246);
+}
+.about .heading {
+    text-align: left;
+}
+.about .heading h4 {
+    padding-left: 0;
 }
 .about-list i {
+    margin-bottom: 20px;
     font-size: 20px;
+    border:1px solid var(--primaryColor);
     color: var(--primaryColor);
 }
 .about .about-list .list {
     text-align: center;
+    background-color: #fff;
 }
 .about-list h4 {
-    font-size: 16px;
-    margin: 20px 0;
-    text-transform: capitalize;
+    color: var(--primaryColor);
+    font-weight: 300px;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 10px;
 }
 @media (max-width: 768px) {
     .about {
@@ -372,24 +396,21 @@ header .slide:nth-child(5) .hero .hero-input button {
     padding: 5% 6.5%;
     padding-bottom: 50px;
 }
-.skills .content h4 {
-    font-weight: 700;
-}
-.skills .project {
+.skills .projects {
     margin-top: 30px;
     font-weight: 700;
 }
-progress {
-    height: 3px;
-    border-radius: 0;
-    width: 100%;
+.skills .list p {
+    line-height: 20px;
+    margin: 10pxs;
 }
-::-webkit-progress-bar {
-    background: rgb(235, 235, 237);
-    height: 3px;
+.skills .list p:nth-child(1) {
+    font-weight: 700;
+    color: var(--primaryColor);
+    text-transform: uppercase;
 }
-::-webkit-progress-value {
-    background-color: var(--primaryColor);
+.skills .list p span, .skills i {
+    color: var(--primaryColor)
 }
 
 @media (max-width: 768px) {
@@ -475,8 +496,24 @@ progress {
     padding: 10% 6.5%;
 }
 .contacts-left {
-    background-color: #f0f0f0;
-    padding: 3% 50px;
+    background-color: #000;
+    position: relative;
+    color: #fff;
+}
+.contacts-left img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+.contacts-left .infos {
+    width: 100%;
+    height: 100%;
+    padding: 15% 50px;
+    background-color: rgba(0, 0, 0, 0.601);
 }
 .contacts-left .info h5 {
     margin-top: -5px;
@@ -493,13 +530,10 @@ progress {
 .form {
     border: 1px solid rgba(0, 0, 0, 0.102);
 }
-.form h4 {
-    font-size: 18px;
-}
 .form form .form-input-box {
-    border: 1px solid rgba(153, 153, 153, 0.272);
+    border: 1px solid rgba(214, 213, 213, 0.194);
     padding: 0 5px;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 .form form .form-input-box i {
     padding: 7px;
@@ -509,7 +543,7 @@ progress {
     border-color: var(--primaryColor);
 }
 .form form .form-input-box input,
-    .form form .form-input-box textarea {
+.form form .form-input-box textarea {
     border-color: transparent;
     font-size: 14px;
     border-radius: 0;
