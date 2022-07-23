@@ -20,11 +20,11 @@
     <title>Trendz</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav">
-    <div>
+    <div id="home">
         <!-----------------Heading section----------------->
 
         <!--Navbar section-->
-        <nav class="navbar navbar-expand-sm sticky-top" id="nav">
+        <nav class="navbar navbar-expand-sm fixed-top" id="nav">
           <!-- Brand and logo section -->
             <h2 class="navbar-brand mt-1 col-lg-2"><img src="./assets/imgs/logo.jpg" class="logo rounded-circle" width="30px" height="30px"/></h2>
 
@@ -62,7 +62,7 @@
 
         
         <!--Header texts hero section-->
-        <header id="home" class="shadow-sm border-light bg-white">
+        <header class="shadow-sm border-light bg-white">
           <div class="slide justify-content-between active">
             <div class="box hero col-lg-4 col-md-6">
               <h1 class="back">DISCOVERY</h1>
@@ -110,33 +110,28 @@
         
         <!--About us section-->
         <section id="about" class="about d-flex flex-wrap">
-            <div class="heading col-lg-4 text-left pe-4 pt-3 pb-3" data-aos="fade-up-right">
+            <div class="heading col-lg-4 text-left p-4 pe-4" data-aos="fade-up-right">
                 <h4>About me</h4>
                 <h2 class="pb-3">Offering values, integrity and excellence</h2>
-
-                <button class="btn rounded bg-light">Download Resume</button>
-                <div class="d-flex mt-3">
-                  <a href="#" class="rounded-circle me-3"><i class="fab fa-linkedin"></i></a>
-                  <a href="#" class="rounded-circle"><i class="fab fa-dribbble"></i></a>
-                </div>
+                <p class="">
+                  A product Designer based in london with 5+ years expertise in visual design, web design and development.
+                </p>
+                <button class="btn bg-white">Download resume</button>
             </div>
             
             <div class="about-list row col-lg-8 bg-white p-4" data-aos="fade-up-right">
-              <p class="">
-                A product Designer
-              </p>
               <h4 class="p-2">SERVICES</h4>
-              <div class="col-lg-4 p-4 pt-3 shadow-sm">
-                <i class="shadow-sm p-3 rounded-circle fas fa-pen-nib"></i>
+              <div class="col-lg-4 p-2 pt-3">
+                <i class="p-3 rounded-circle fas fa-pen-nib"></i>
                 <h4>UI/UX design</h4>
                 <p>Creating website applications design, Mobile apllications design and other designs.</p>
               </div>
-              <div class="col-lg-4 p-4 pt-3 shadow-sm">
+              <div class="col-lg-4 p-2 pt-3">
                 <i class="shadow-sm p-3 rounded-circle fas fa-drafting-compass"></i>
                 <h4>Visual product design</h4>
                 <p>Creating website applications design, Mobile apllications design and other designs.</p>
               </div>
-              <div class="col-lg-4 p-4 pt-3 shadow-sm">
+              <div class="col-lg-4 p-2 pt-3">
                 <i class="shadow-sm p-3 rounded-circle fa-solid fa-edit"></i>
                 <h4>Website deisgn</h4>
                 <p>Creating website applications design, Mobile apllications design and other designs.</p>
@@ -325,7 +320,7 @@
         </div>
 
         <!-- Contact form -->
-        <div class="row form col-lg-8 col-12 p-4 text-center ms-auto me-auto" data-aos="fade-right">
+        <div class="row form col-lg-8 col-12 p-2 text-center ms-auto me-auto" data-aos="fade-right">
             <form class="row m-auto needs-validation" method="post" id="contactForm">
               <p class="p-3">Feel free to message me. I always respond within 24 hours.</p>
                 <div class="col-lg-6 pb-4">
@@ -345,7 +340,7 @@
                 <div class="col-lg-6">
                     <div class="form-input-box d-flex">
                         <i class="fa fa-edit"></i>
-                        <textarea class="flex-1" id="content" placeholder="Message" name="content" required></textarea>
+                        <textarea class="form-control flex-1 w-100" id="content" placeholder="Message" name="content" required></textarea>
                     </div>
                 </div>
                 <button name="submit" class="btnAction" onClick="sendContact();">Send Message</button>

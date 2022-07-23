@@ -57,7 +57,7 @@ section {
     font-size: 14px;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 0% 8.5%;
 } 
 .heading h2 {
@@ -72,7 +72,7 @@ section {
     font-size: 14px;
     border: 1px solid var(--primaryColor);
     color: var(--primaryColor);
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .heading a {
     background-color: var(--primaryColor);
@@ -161,16 +161,16 @@ nav .nav-item.socials i:hover {
 --------------------------------------------------------------*/
 
 header {
-    margin: 3% 6.5%;
+    margin: 7% 6.5%;
     max-height: 80vh;
     box-shadow: 2px 2px 10px rgba(153, 153, 153, 0.201);
     position: relative;
     overflow: hidden;
 }
-header#home .slide {
+header .slide {
     display: none;
 }
-header#home .slide.active {
+header .slide.active {
     display: flex;
     align-items: center;
 }
@@ -282,7 +282,7 @@ header .slide:nth-child(5) .hero .hero-input button {
     header {
         flex-wrap: wrap;
         height: auto;
-        margin: 0 3%;
+        margin: 70px 3%;
         margin-bottom: 10%;
         max-height: 100%;
     }
@@ -313,12 +313,13 @@ header .slide:nth-child(5) .hero .hero-input button {
     }
     header .hero-bottom {
         position: initial;
+        margin-left: 15px;
     }
 
 }
 @media (max-width: 768px) {
     header .hero {
-        left: 50px;
+        left: 30px;
         bottom: 20%;
   }
     header .hero h1 {
@@ -377,15 +378,18 @@ header .slide:nth-child(5) .hero .hero-input button {
 }
 @media (max-width: 768px) {
     .about {
-        margin: 70px 3%;
+        padding: 70px 3%;
     }
     .about .heading {
         width: 100%;
     }
+    .about .about-list {
+        padding: 30px 0;
+    }
     .about-list .list {
         text-align: left;
         width: 100%;
-        margin: 10px;
+        margin: 10px 0;
     }
 }
 
@@ -393,7 +397,7 @@ header .slide:nth-child(5) .hero .hero-input button {
 # Skills
 --------------------------------------------------------------*/
 .skills {
-    padding: 5% 6.5%;
+    padding: 80px 6.5%;
     padding-bottom: 50px;
 }
 .skills .projects {
@@ -423,7 +427,7 @@ header .slide:nth-child(5) .hero .hero-input button {
 # Projects section
 --------------------------------------------------------------*/
 .projects {
-    padding: 15% 6.5% 5% 6.5%;
+    padding: 80px 6.5% 5% 6.5%;
 }
 .gallery {
     padding: 0;
@@ -569,6 +573,9 @@ header .slide:nth-child(5) .hero .hero-input button {
 @media (max-width: 768px) {
     .contact {
         padding: 70px 3%;
+    }
+    .form form .btnAction {
+        width: 95%;
     }
 }
 
