@@ -1,0 +1,30 @@
+:root {
+    --primaryColor: rgb(4, 12, 249);
+    --secondaryColor: rgb(213, 3, 250);
+    --tetiaryColor: rgb(250, 118, 3);
+}
+
+.heading h4,
+header .hero h1,
+nav .nav-item .nav-link.active,
+nav .nav-item.socials i:hover,
+header .hero a i,
+.skills .list p:nth-child(1),
+.infos i,
+.testimonials h5,
+.faq .faq-list a,
+.faq .faq-list .icon-help,
+.faq .faq-list a.collapsed,
+#footer .footer-top .footer-links ul i,
+#footer .footer-top .footer-links ul a:hover,
+#footer .copyright span,
+#footer .credits a {
+    background: -webkit-linear-gradient(45deg, var(--primaryColor), var(--secondaryColor), var(--tetiaryColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .hero button,
+#footer .footer-top .social-links a i,
+.form form .btnAction {
+    background: linear-gradient(45deg, var(--primaryColor), var(--secondaryColor), var(--tetiaryColor)); 
+}
