@@ -21,7 +21,8 @@
     border: none;
     color: #fff;
 }
-.dark .about {
+.dark .about,
+.dark .about .about-list {
     background-color: #161822;
     color: rgb(208, 208, 208);
 }

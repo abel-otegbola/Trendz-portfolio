@@ -256,6 +256,7 @@ header .card .jobs:nth-child(2) {
 }
 header .card .jobs h6 {
     color: var(--primaryColor);
+    padding: 5px 0;
 }
 header .card i {
     color: rgba(102, 102, 102, 0.272);
