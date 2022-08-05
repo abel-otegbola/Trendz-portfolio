@@ -1,0 +1,43 @@
+:root {
+    --primaryColor: rgb(4, 12, 249);
+    --secondaryColor: rgb(213, 3, 250);
+    --tetiaryColor: rgb(250, 118, 3);
+}
+
+.heading h4,
+header .hero h1 span,
+nav .nav-item .nav-link.active,
+nav .nav-item .nav-link:hover,
+nav .nav-item.socials i:hover,
+header .hero a i,
+header .card .jobs h6,
+header .card i:hover,
+.about-list i,
+.skills .list p:nth-child(1),
+.infos i,
+.testimonials h5,
+.faq .faq-list a,
+.faq .faq-list .icon-help,
+.faq .faq-list a.collapsed,
+#footer .footer-top .footer-links ul i,
+#footer .footer-top .footer-links ul a:hover,
+#footer .copyright span,
+#footer .credits a {
+    background: -webkit-linear-gradient(45deg, var(--primaryColor), var(--secondaryColor), var(--tetiaryColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+header .hero .hero-button,
+#footer .footer-top .social-links a i,
+.form form .btnAction {
+    background: linear-gradient(45deg, var(--primaryColor), var(--secondaryColor), var(--tetiaryColor)); 
+    color: #fff;
+}
+header .hero .hero-button.btn:hover,
+#portfolio-flters li:hover, #portfolio-flters li.active,
+.form form .btnAction:hover {
+    border: 1px solid var(--secondaryColor);
+    background: -webkit-linear-gradient(45deg, var(--primaryColor), var(--secondaryColor), var(--tetiaryColor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

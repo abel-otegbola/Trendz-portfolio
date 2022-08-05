@@ -1,0 +1,94 @@
+:root {
+    --primaryColor: rgb(138, 60, 222);
+    --secondaryColor: rgb(130, 40, 146);
+}
+.dark {
+    color: rgb(208, 208, 208);
+}
+.dark .navbar-brand span,
+.dark nav a,
+.dark nav button i {
+    color: rgb(208, 208, 208);
+}
+.dark .heading h2 {
+    color: rgb(203, 203, 203);
+}
+.dark header {
+    border: 7px solid rgba(255, 255, 255, 0.134);
+    background-color: #161822;
+}
+.dark header .hero {
+    background-color: #161822;
+    color: #fff;
+}
+.dark header .hero li {
+    color: #fff;
+}
+.dark header .hero button {
+    background: linear-gradient(90deg, var(--primaryColor), var(--secondaryColor)); 
+    border: none;
+    color: #fff;
+}
+.dark header .card {
+    background-color: #18182c;
+    color: rgb(208, 208, 208);
+}
+.dark .about,
+.dark .about .about-item {
+    background-color: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark .features .feature {
+    background-color: #161822;
+    color: #fff;
+}
+.dark #portfolio-flters li {
+    color: rgb(208, 208, 208);
+}
+.dark .gallery .project img {
+    background: #161822;
+    opacity: 0.7;
+}
+.dark .pricing .price {
+    background-color: #18182c;
+    color: rgb(208, 208, 208);
+}
+.dark .pricing .price:nth-child(2) {
+    background-color: #0b0b22;
+    color: rgb(208, 208, 208);
+}
+.dark .form {
+    border: 1px solid rgba(0, 0, 0, 0.102);
+    background-color: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark .form form .form-input-box input,
+.dark .form form .form-input-box textarea {
+    background-color: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark .testimonials .feedback {
+    background-color: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark .faq {
+    background-color: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark #footer {
+    background: #161822;
+    color: rgb(208, 208, 208);
+}
+.dark #backToTop i {
+    color: var(--primaryColor);
+    background-color: #161822;
+}
+.dark #backToTop i:hover {
+    color: #fff;
+    background-color: var(--primaryColor);
+}
+.dark .faq .faq-list li {
+    background: #161822;
+    color: rgb(208, 208, 208);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.272);
+}
